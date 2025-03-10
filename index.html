@@ -3,10 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vinay Pal - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hello, I'm Vinay, a software developer.</p>
+    <!-- Header Section -->
+    <header>
+
+        <div class="header-container">
+            <img src="images/university_picture.jpg" alt="Vinay" class="profile-image">
+            <h1>Vinay Kirk Pal</h1>
+        </div>
+
+        <div class="container">
+
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! My name is Vinay, and I am a Computer Science graduate passionate about software development and learning new technologies.</p>
+            <br>
+            <p>I graduated from Brunel University with a 1st Class Bachelors (Hons) in Computer Science</p>
+            <br>
+            <p>I am currently located in London, United Kingdom. I am also open to relocation for work opportunities!</p>
+            <br>
+            <h3>Technical skills:</h3>
+            <br>
+            <p>Languages: Java, Python, SQL, C#, R, JavaScript, HTML, CSS</p>
+            <p>Frameworks/Tools: Flask, Spring Boot, Hibernate, Shiny, React, Power BI</p>
+            <p>Databases: Microsoft SQL Server, MySQL, SQLite</p>
+            <p>Cloud & DevOps: Microsoft Azure, Active Directory, Microsoft 365</p>
+            <p>Version Control/Project Management: Git, GitHub, Jira, Agile</p>
+
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project-card">
+                    <h3>Malware Prediction Web Application</h3>
+                    <ul>
+                        <li>Interactive Shiny web application for malware prediction enhancing threat detection</li>
+                        <li>Performance is benchmarked using the Weighted Kappa metric to assess reliability</li>
+                        <li>Data visualisation like cluster plots, dendrograms, and bar charts</li>
+                    </ul>
+                    <p>Languages/Tech: R, Shiny</p>
+                    <button type="button">Repo</button>
+                </div>
+                <div class="project-card">
+                    <h3>Weather App</h3>
+                      <ul>
+                        <li>Fetches weather data for different cities</li>
+                        <li>Displays conditions such as temperature, windspeed, and humidity</li>
+                        <li>Error handling (Invalid city, timeout, invalid API, lost connection, etc)</li>
+                    </ul>
+                     <p>Languages/Tech: Python</p>
+                    <button type="button">Repo</button>
+                </div>
+                <div class="project-card">
+                    <h3>IT Support Chatbot</h3>
+                       <ul>
+                        <li>Full-Stack IT Chatbot enabling users to troubleshoot issues via keyword query matching</li>
+                        <li>SQLite database to store troubleshooting questions and responses dynamically</li>
+                        <li>Ticket-logging functionality, generating support tickets after failing troubleshooting attempts</li>
+                    </ul>
+                     <p>Languages/Tech: Python, Flask, SQLite, HTML, CSS</p>
+                    <button type="button">Repo</button>
+                </div>
+                <div class="project-card">
+                    <h3>Food Donation Management System</h3>
+                       <ul>
+                        <li>Full-Stack Spring Boot application to connect donors to food banks</li>
+                        <li>Uses PayPal API to enable secure donations and Google Maps API to display the closest food banks</li>
+                        <li>Custom log-in portals for people who need food, donors, and admin</li>
+                    </ul>
+                     <p>Languages/Tech: Java, Spring Boot, SQL Server, HTML, CSS</p>
+                    <button type="button">Repo</button>
+                </div>
+                <div class="project-card">
+                    <h3>Calculator App</h3>
+                       <ul>
+                        <li>Allows for basic operations (addition, subtraction, division, exponents, floor division)</li>
+                        <li>Option to choose between a command-line or graphical interface</li>
+                        <li>Quality of life improvements such as backspace, decimal point, restart, and night mode</li>
+                       </ul>
+                     <p>Languages/Tech: Python</p>
+                    <button type="button">Repo</button>
+                </div>
+                <div class="project-card">
+                    <h3>Finch Robot Project</h3>
+                       <ul>
+                        <li>Programmable Finch capabilities such as infrared, light, movement, sound</li>
+                        <li>Command line interface used to control Finch functionality</li>
+                        <li>More advanced functionality such as maze navigation and heat-seeking</li>
+                       </ul>
+                     <p>Languages/Tech: Java</p>
+                    <button type="button">Repo</button>
+                </div>
+                <div class="project-card">
+                    <h3>Bank Simulation Project</h3>
+                       <ul>
+                        <li>Client-server demonstration of locking and threads</li>
+                        <li>Utilised Server Sockets to implement a server</li>
+                       </ul>
+                     <p>Languages/Tech: Java</p>
+                    <button type="button">Repo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>You can reach me at <strong>vinaypal5555@gmail.com</strong> or via <a href="https://github.com/VinPal5554" target="_blank">LinkedIn</a></p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
