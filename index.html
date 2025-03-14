@@ -16,15 +16,13 @@
 
       <!-- Devicon for icons -->
   <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" rel="stylesheet">
-
 </head>
 <body>
     <!-- Header Section -->
     <header>
-
         <div class="header-container">
             <img src="images/university_picture.jpg" alt="Vinay" class="profile-image">
-
+                <button id="dark-mode-toggle" class="btn btn-outline-dark">🌙</button>
        <!-- GitHub Icon -->
         <a href="https://github.com/VinPal5554" target="_blank" class="btn btn-dark"><i class="fab fa-github"></i></a>
 
@@ -49,6 +47,8 @@
             </nav>
         </div>
     </header>
+
+
 
     <!-- About Me Section -->
 <section id="about" class="section">
@@ -84,6 +84,7 @@
                     <i class="devicon-flask-original colored mx-2 display-6"></i> Flask &nbsp; |
                     <i class="devicon-spring-plain colored mx-2 display-6"></i> Spring Boot &nbsp; |
                     <i class="devicon-hibernate-plain colored mx-2 display-6"></i> Hibernate &nbsp; |
+                    <i class="devicon-vuejs-plain"></i> Vue &nbsp; |
                     <i class="devicon-react-original colored mx-2 display-6"></i> React &nbsp; |
                     <i class="devicon-powerbi-plain colored mx-2 display-6"></i> Power BI &nbsp; |
                     <i class="devicon-rstudio-plain colored mx-2 display-6"></i> Shiny
@@ -149,10 +150,11 @@
         <div class="project-card p-3 border">
             <h3><strong>Weather App</strong></h3>
             <ul>
-                <li>Fetches weather data for different cities</li>
-                <li>Displays weather conditions like temperature, humidity, and wind speed</li>
+                <li>Fetches current weather details (temperature, description, humidity, wind speed) for any city</li>
+                <li>Responsive UI: Built with Vue.js and styled using Tailwind CSS</li>
+                <li>Backend API: The backend is built with Flask and handles requests to the OpenWeatherMap API</li>
             </ul>
-            <p>Languages/Tech: Python, Flask</p>
+            <p>Languages/Tech: Python, Flask, Vue.js, HTML, CSS, JavaScript</p>
             <a href="https://github.com/VinPal5554/weather-app" target="_blank">
                 <button type="button" class="btn btn-primary">Repo</button>
             </a>
@@ -211,6 +213,8 @@
             <h3><strong>Finch Robot Project</strong></h3>
             <ul>
                 <li>Programmable Finch Robot from Bird Brain Technologies</li>
+                <li>Allows for different functionality (infrared, sound, light, movement)</li>
+                <li>Additional minigame functionality (maze navigation, heat-seeking)</li>
             </ul>
             <p>Languages/Tech: Java</p>
             <a href="https://github.com/VinPal5554/Finch-Robot-Project" target="_blank">
@@ -226,7 +230,7 @@
         <div class="project-card p-3 border">
             <h3><strong>Bank Simulation App</strong></h3>
             <ul>
-                <li></li>
+                <li>Bank application that demonstrates effectiveness of threads and locking</li>
             </ul>
             <p>Languages/Tech: Java</p>
             <a href="https://github.com/VinPal5554/Simple-Bank-Application" target="_blank">
@@ -239,7 +243,7 @@
         <div class="project-card p-3 border">
             <h3><strong>Topdown Shooter Game</strong></h3>
             <ul>
-                <li>Project description goes here</li>
+                <li>Topdown shooter made in Unity</li>
             </ul>
             <p>Languages/Tech: C Sharp, Unity</p>
             <a href="https://github.com/VinPal5554/Topdown-Shooting-Game" target="_blank">
@@ -269,7 +273,7 @@
         <div class="container">
             <h2><strong>Contact Me</strong></h2>
             <div class="formcarry-container">
-                <form action="#" method="POST" class="formcarry-form">
+                <form action="https://formsubmit.co/vinaypal5555@gmail.com" method="POST" class="formcarry-form">
                 <label for="name">Your Name</label>
                 <input type="text" id="name" name="fullName" required />
                 <label for="email">Your Email Address</label>
@@ -291,5 +295,7 @@
             <p>&copy; 2025 My Portfolio. All rights reserved.</p>
         </div>
     </footer>
+
+<script src="scripts/darkModeToggle.js"></script>
 </body>
 </html>

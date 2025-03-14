@@ -125,17 +125,6 @@ footer {
     transform: translateY(-10px);
 }
 
-/* Contact me form */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-
-/*
-  CONTACT FORM EXAMPLE FOR FORMCARRY
-
-  IMPORTANT NOTE:
-  PLEASE ADD formcarry-form class to your form element
-  to apply the styles.
-*/
-
 .formcarry-container * {
   box-sizing: border-box;
 	font-family: "Inter", sans-serif;
@@ -232,5 +221,28 @@ footer {
 
 .formcarry-alert.error {
   background: #de524c;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark-mode .container {
+  background-color: #555; /* Dark background for container */
+  color: white; /* Light text color for container */
+}
+
+body.dark-mode .centered-container {
+  background-color: #666; /* Dark background for centered container */
+  color: white; /* Light text color for centered container */
+  text-align: center; /* Centering the content */
+}
+
+body.dark-mode .card {
+  background-color: #666; /* Dark background for centered container */
+  color: white; /* Light text color for centered container */
+  text-align: center; /* Centering the content */
 }
 
