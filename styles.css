@@ -229,20 +229,14 @@ body.dark-mode {
   color: #fff;
 }
 
-body.dark-mode .container {
-  background-color: #555; /* Dark background for container */
-  color: white; /* Light text color for container */
-}
-
-body.dark-mode .centered-container {
-  background-color: #666; /* Dark background for centered container */
-  color: white; /* Light text color for centered container */
-  text-align: center; /* Centering the content */
-}
 
 body.dark-mode .card {
-  background-color: #666; /* Dark background for centered container */
-  color: white; /* Light text color for centered container */
-  text-align: center; /* Centering the content */
+  background-color: black;
+  color: white;
+  text-align: center;
 }
 
+body.dark-mode #contact {
+  background-color: black;
+  color: white;
+}
