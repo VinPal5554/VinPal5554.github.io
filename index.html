@@ -164,12 +164,12 @@
         <div class="project-card p-3 border">
             <h3><strong>IT Support Chatbot</strong></h3>
             <ul>
-                <li>Full-Stack IT Chatbot enabling users to troubleshoot issues</li>
-                <li>SQLite database to store troubleshooting questions and responses</li>
-                <li>Ticket-logging functionality to generate support tickets</li>
+                <li>User-friendly web interface for chatting with the bot</li>
+                <li>Utilizes OpenAI's GPT-3.5 model to generate responses to user queries</li>
+                <li>Easy to set up using environment variables for the OpenAI API key</li>
             </ul>
-            <p><strong>Languages/Tech:</strong> Python, Flask, SQLite, SQLAlchemy, HTML, CSS</p>
-            <p><strong>Categories:</strong> Web Development, Database, Backend Development</p>
+            <p><strong>Languages/Tech:</strong> Python, Flask, OpenAI, HTML, CSS</p>
+            <p><strong>Categories:</strong> Artificial Intelligence, Web Development, Backend Development</p>
             <a href="https://github.com/VinPal5554/ITSupportChatbot" target="_blank">
                 <button type="button" class="btn btn-primary">Repo</button>
             </a>
@@ -243,6 +243,9 @@
             <a href="https://github.com/VinPal5554/photo-editor" target="_blank">
                 <button type="button" class="btn btn-primary">Repo</button>
             </a>
+            <a href="https://photo-editor-sable.vercel.app/" target="_blank">
+                <button type="button" class="btn btn-primary">Demo</button>
+            </a>
         </div>
     </div>
 
@@ -287,18 +290,20 @@
     <section id="contact" class="section">
         <div class="container">
             <h2><strong>Contact Me</strong></h2>
-            <div class="formcarry-container">
-                <form action="https://formsubmit.co/vinaypal5555@gmail.com" method="POST" class="formcarry-form">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="fullName" required />
-                <label for="email">Your Email Address</label>
-                <input type="email" id="email" name="email" required />
-                <label for="message">Your Message</label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
-
-                <button type="submit">Send</button>
+            <div class="form-container">
+                <form action="https://formspree.io/f/mgvaroky" method="POST">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" required>
+            
+                  <label for="email">Your Email</label>
+                  <input type="email" id="email" name="email" required>
+            
+                  <label for="message">Your Message</label>
+                  <textarea id="message" name="message" required></textarea>
+            
+                  <button class="btn btn-primary" type="submit">Send Message</button>
                 </form>
-            </div>
+              </div>
             <br>
             <p>You can also contact me on <a href="https://www.linkedin.com/in/vinay-kirk-pal/" target="_blank">LinkedIn</a></p>
         </div>
