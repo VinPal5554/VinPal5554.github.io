@@ -57,37 +57,6 @@ p {
     font-size: 1.1rem;
 }
 
-/* Projects Section */
-.project-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.project-card h3 {
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
-}
-
-.project-card p {
-    font-size: 1rem;
-}
-
-.project-card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-.project-card img {
-    width: 100%;            /* Ensure the image spans the entire width of its container */
-    height: 100%;           /* Maintain the aspect ratio */
-    object-fit: cover; /* Ensure the image covers the entire space */
-    object-position: center; /* Center the image if cropped */
-}
 
 /* Contact Section */
 #contact {
@@ -147,10 +116,12 @@ body.dark-mode {
   color: #fff;
 }
 
-body.dark-mode .card {
-  background-color: black;
+body.dark-mode .card,
+body.dark-mode .project-card {
+  background-color: #1e1e1e; /* Use a very dark gray instead of pure black for better contrast */
   color: white;
   text-align: center;
+  border-color: #333; /* Optional: darken border too */
 }
 
 body.dark-mode #contact {
@@ -158,21 +129,40 @@ body.dark-mode #contact {
   color: white;
 }
 
-/*
-.project-card img {
-    max-height: 200px;
-    object-fit: cover;
-    width: 100%;
-    border: 2px solid #ccc;
-    border-radius: 8px; 
-    padding: 2px;      
-}
-    */
-
 .project-divider {
     border: none;
     border-top: 2px solid #ddd;
-    margin: 10px 0;
+    margin: 0.5rem 0;
+}
+
+.art-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.project-card {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    image-rendering: pixelated; 
+    display: block;
+}
+
+.project-card h3 {
+    margin-top: auto; /* Push heading to bottom if needed */
+    font-size: 1rem;
 }
 
 

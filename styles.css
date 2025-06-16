@@ -145,20 +145,26 @@ input, textarea {
   
 }
 
+.card, .project-card {
+    text-align: center;
+}
+
 /* Dark Mode Styles */
 body.dark-mode {
   background-color: #121212;
   color: #fff;
 }
 
-body.dark-mode .card {
-  background-color: black;
+body.dark-mode .card,
+body.dark-mode .project-card {
+  background-color: #1e1e1e; /* Use a very dark gray instead of pure black for better contrast */
   color: white;
   text-align: center;
+  border-color: #333; /* Optional: darken border too */
 }
 
 body.dark-mode #contact {
-  background-color: black;
+  background-color: #1e1e1e;
   color: white;
 }
 
