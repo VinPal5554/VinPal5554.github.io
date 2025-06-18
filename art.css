@@ -137,8 +137,29 @@ body.dark-mode #contact {
 
 .art-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);  /* Force 4 per row */
     gap: 1rem;
+    padding: 1rem;
+
+}
+
+/* Make it responsive on smaller screens */
+@media (max-width: 992px) {
+  .art-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .art-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .art-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .project-card {
