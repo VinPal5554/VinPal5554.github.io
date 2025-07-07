@@ -278,6 +278,66 @@ const artworks = [
     src: "images/art/sprite.gif",
     title: "Sprite",
     resolution: "low"
+  },
+    {
+    src: "images/art/UndeadGolem.gif",
+    title: "Undead Golem",
+    resolution: "high"
+  },
+   {
+    src: "images/art/crusader.gif",
+    title: "Crusader",
+    resolution: "medium"
+  },
+   {
+    src: "images/art/priest.gif",
+    title: "Priest",
+    resolution: "medium"
+  },
+   {
+    src: "images/art/cyber.gif",
+    title: "Cyberman (Doctor Who)",
+    resolution: "medium"
+  },
+   {
+    src: "images/art/peasant.gif",
+    title: "Peasant",
+    resolution: "medium"
+  },
+    {
+    src: "images/art/heavysword.gif",
+    title: "Heavy Sword",
+    resolution: "medium"
+  },
+    {
+    src: "images/art/nimblespear.gif",
+    title: "Nimble Spear",
+    resolution: "medium"
+  },
+   {
+    src: "images/art/spikeflail.gif",
+    title: "Spiked Flail",
+    resolution: "medium"
+  },
+   {
+    src: "images/art/weaponmockup.gif",
+    title: "Weapon Selection Mockup",
+    resolution: "high"
+  },
+   {
+    src: "images/art/fleshgolem.gif",
+    title: "Flesh Golem",
+    resolution: "medium"
+  },
+    {
+    src: "images/art/nun.gif",
+    title: "Nun",
+    resolution: "medium"
+  },
+     {
+    src: "images/art/crusader2.gif",
+    title: "Crusader (Version 2)",
+    resolution: "medium"
   }
    
   
