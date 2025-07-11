@@ -137,21 +137,100 @@ body.dark-mode #contact {
 
 .art-grid {
  position: relative;
-  padding: 0 32px; /* or any padding */
+
+}
+
+/* Float items to let Packery place them */
+.grid-sizer,
+.grid-item {
+  float: left;
   box-sizing: border-box;
 }
 
+/* Base column size (adjust as needed) */
 .grid-sizer {
-  width: 8%; /* base column width */
-  float: left;
+  width: 200px;
+}
+
+.grid-item img.art-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+  border: 2px solid #444;
+}
+
+/* Item size variations by resolution */
+.grid-item.low { width: 200px; }
+.grid-item.medium { width: 300px; }
+.grid-item.high { width: 400px; }
+
+
+/* ===== Tablets ===== */
+@media (max-width: 1024px) {
+  .grid-sizer {
+    width: 150px;
+  }
+
+  .grid-item.low {
+    width: 150px;
+  }
+
+  .grid-item.medium {
+    width: 225px;
+  }
+
+  .grid-item.high {
+    width: 300px;
+  }
+}
+
+/* ===== Phones ===== */
+@media (max-width: 768px) {
+  .grid-sizer {
+    width: 120px;
+  }
+
+  .grid-item.low {
+    width: 120px;
+  }
+
+  .grid-item.medium {
+    width: 180px;
+  }
+
+  .grid-item.high {
+    width: 240px;
+  }
+
+ 
+}
+
+/* ===== Very small phones ===== */
+@media (max-width: 480px) {
+  .grid-sizer {
+    width: 100px;
+  }
+
+  .grid-item.low {
+    width: 100px;
+  }
+
+  .grid-item.medium {
+    width: 150px;
+  }
+
+  .grid-item.high {
+    width: 200px;
+  }
 }
 
 .art-image {
-  float: left;
+
   display: block;
   margin-bottom: 16px;
   image-rendering: pixelated;
-
+  height: auto;
   border: 2px solid #444;    
   border-radius: 4px;          
   background-color: #111;       /* if background behind transparent images */
@@ -161,19 +240,6 @@ body.dark-mode #contact {
 .art-image:hover {
   transform: scale(1.02);       /* subtle grow */
   transition: transform 0.2s ease;
-}
-
-/* Size images according to resolution */
-.art-image.low {
-  width: 8%;  /* 1 × grid-sizer */
-}
-
-.art-image.medium {
-  width: 16%; /* 2 × grid-sizer */
-}
-
-.art-image.high {
-  width: 24%; /* 3 × grid-sizer */
 }
 
 .lightbox {

@@ -338,6 +338,41 @@ const artworks = [
     src: "images/art/crusader2.gif",
     title: "Crusader (Version 2)",
     resolution: "medium"
+  },
+    {
+    src: "images/art/daggers.gif",
+    title: "Hidden Daggers",
+    resolution: "medium"
+  },
+   {
+    src: "images/art/lightsword.gif",
+    title: "Light Sword",
+    resolution: "medium"
+  },
+   {
+    src: "images/art/thornwhip.gif",
+    title: "Thorn Whip",
+    resolution: "medium"
+  },
+   {
+    src: "images/art/dave.png",
+    title: "Dave",
+    resolution: "medium"
+  },
+   {
+    src: "images/art/mercenary.png",
+    title: "Mercenary",
+    resolution: "medium"
+  },
+  {
+    src: "images/art/hauntedjobapplication.png",
+    title: "Haunted Job Application",
+    resolution: "low"
+  },
+   {
+    src: "images/art/snow.gif",
+    title: "Playing in the Snow",
+    resolution: "low"
   }
    
   
